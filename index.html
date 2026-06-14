@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khalifa Ababacar Diadhiou — Ingénieur Systèmes d'Information & Développeur Full Stack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Curseur clignotant décoratif -->
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a href="#top" class="logo">
+        <span class="logo-bracket">&lt;</span>KAD<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">Profil</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#projects">Réalisations</a></li>
+        <li><a href="#education">Formation</a></li>
+        <li><a href="#contact" class="nav-cta" style="color: white;">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-text">
+        <p class="eyebrow">// développeur full stack — java &amp; angular</p>
+        <h1 class="hero-title">
+          Khalifa Ababacar <span class="accent">Diadhiou</span>
+        </h1>
+        <p class="hero-role">Ingénieur Systèmes d'Information</p>
+        <p class="hero-desc">
+          Je conçois et développe des applications web métiers et bancaires robustes,
+          avec <strong>Java Spring Boot</strong> côté serveur et <strong>Angular</strong>
+          côté interface. Architecture propre, API REST sécurisées, bases de données
+          maîtrisées — actuellement chez Fin@pps, filiale de FINETECH GROUPE.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Me contacter</a>
+          <a href="#projects" class="btn btn-ghost">Voir les réalisations</a>
+        </div>
+        <div class="hero-meta">
+          <span>📍 Dakar, Sénégal</span>
+          <span>🎓 Master 2 Génie Logiciel — ISI</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="terminal">
+          <div class="terminal-bar">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="terminal-title">developer.java</span>
+          </div>
+          <pre class="terminal-body"><code><span class="tok-kw">public class</span> <span class="tok-cls">Developpeur</span> {
+
+  <span class="tok-kw">private</span> String nom = <span class="tok-str">"Khalifa Diadhiou"</span>;
+  <span class="tok-kw">private</span> String[] stack = {
+    <span class="tok-str">"Java 17/21"</span>, <span class="tok-str">"Spring Boot"</span>,
+    <span class="tok-str">"Php 8.0"</span>, <span class="tok-str">"Laravel"</span>,
+    <span class="tok-str">"Angular"</span>, <span class="tok-str">"PostgreSQL"</span>,
+    <span class="tok-str">"Docker"</span>, <span class="tok-str">"REST API"</span>
+    <span class="tok-str">"Monolithique"</span>, <span class="tok-str">"Microservices"</span>
+  };
+
+  <span class="tok-kw">public</span> String <span class="tok-fn">mission</span>() {
+    <span class="tok-kw">return</span> <span class="tok-str">"Construire des solutions</span>
+<span class="tok-str">           informatiques fiables."</span>;
+  }
+}</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFIL -->
+    <section id="about" class="about container">
+      <div class="section-head">
+        <p class="eyebrow">// profil</p>
+        <h2>Qui suis-je</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-photo">
+          <img src="assets/profil.png" alt="Photo de profil de Khalifa Ababacar Diadhiou">
+        </div>
+        <div class="about-text">
+          <p>
+            Ingénieur Systèmes d'Information et Développeur d'Applications Web Full Stack,
+            spécialisé dans la conception, le développement et la maintenance de solutions
+            métiers et bancaires.
+          </p>
+          <p>
+            J'ai acquis mon expérience professionnelle chez <strong>Fin@pps</strong> (filiale
+            de FINETECH GROUPE), où je développe des applications web basées sur
+            <strong>Java Spring Boot</strong> et <strong>Angular</strong>. Mes compétences
+            couvrent l'architecture logicielle, les bases de données relationnelles,
+            les API REST, le DevOps et les méthodologies Agile Scrum.
+          </p>
+          <p>
+            Actuellement en <strong>Master 2 Génie Logiciel</strong> à l'ISI de Dakar,
+            je continue d'approfondir mon expertise technique tout en contribuant à des
+            projets concrets sur le terrain.
+          </p>
+          <div class="languages">
+            <span class="lang-tag">Français</span>
+            <span class="lang-tag">Wolof</span>
+            <span class="lang-tag">Anglais</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section id="skills" class="skills container">
+      <div class="section-head">
+        <p class="eyebrow">// compétences techniques</p>
+        <h2>Stack &amp; outils</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Back-end</h3>
+          <ul>
+            <li>Java 17 / 21</li>
+            <li>Spring Boot, Spring MVC</li>
+            <li>Spring Security</li>
+            <li>JPA / Hibernate</li>
+            <li>API REST</li>
+            <li>Maven</li>
+            <li>Php 8.0</li>
+            <li>Laravel</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Front-end</h3>
+          <ul>
+            <li>Angular, TypeScript</li>
+            <li>JavaScript (ES6+)</li>
+            <li>HTML5 / CSS3</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Bases de données</h3>
+          <ul>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>DevOps &amp; Outils</h3>
+          <ul>
+            <li>Git / GitHub</li>
+            <li>Docker</li>
+            <li>Jenkins, Gitlab CI, GitHub Actions : CI/CD</li>
+            <li>SonarQube, OWASP</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Méthodes &amp; Architecture</h3>
+          <ul>
+            <li>UML, Merise</li>
+            <li>Agile Scrum</li>
+            <li>Architecture MVC</li>
+            <li>Monolithique &amp; Microservices</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPÉRIENCE -->
+    <section id="experience" class="experience container">
+      <div class="section-head">
+        <p class="eyebrow">// parcours professionnel</p>
+        <h2>Expérience</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="timeline-date">Août 2023 — Aujourd'hui</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Développeur Web Full Stack Java Spring Boot &amp; Angular</h3>
+            <p class="timeline-company">Fin@pps — filiale de FINETECH GROUPE</p>
+            <ul>
+              <li>Développement et maintenance d'applications métiers et bancaires.</li>
+              <li>Conception et développement d'API REST sécurisées.</li>
+              <li>Développement d'interfaces utilisateur avec Angular.</li>
+              <li>Gestion et optimisation des bases de données PostgreSQL.</li>
+              <li>Participation aux analyses fonctionnelles et techniques.</li>
+              <li>Utilisation de Git/GitHub et méthodologie Agile Scrum.</li>
+              <li>Buisiness Process Management and notation - BPMN.</li>
+              <li>Contribution à la qualité logicielle et aux bonnes pratiques de développement.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RÉALISATIONS -->
+    <section id="projects" class="projects container">
+      <div class="section-head">
+        <p class="eyebrow">// réalisations</p>
+        <h2>Projets</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-media">
+            <img src="assets/realisation_img2.png" alt="Aperçu de la plateforme de gestion de comptabilité">
+          </div>
+          <div class="project-body">
+            <h3>Plateforme de gestion de comptabilité</h3>
+            <p>Application de gestion comptable développée pour digitaliser le suivi financier d'une organisation.</p>
+            <div class="project-tags">
+              <span>Laravel</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-media">
+            <img src="assets/realisation_img1.png" alt="Aperçu de la plateforme de gestion de ventes Optique & Lunetterie">
+          </div>
+          <div class="project-body">
+            <h3>Plateforme de gestion de ventes — Optique &amp; Lunetterie</h3>
+            <p>Système de gestion des ventes destiné à un commerce d'optique : suivi du stock, des commandes et de la facturation.</p>
+            <div class="project-tags">
+              <span>Laravel</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-media">
+            <img src="assets/realisation_img3.jpg" alt="Aperçu des systèmes bancaires développés en équipe">
+          </div>
+          <div class="project-body">
+            <h3>Systèmes bancaires</h3>
+            <p>Participation à la conception et au développement de plusieurs systèmes bancaires en équipe, de l'analyse fonctionnelle à l'implémentation.</p>
+            <div class="project-tags">
+              <span>JEE</span>
+              <span>Spring Boot</span>
+              <span>Angular</span>
+              <span>BPMN</span>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FORMATION -->
+    <section id="education" class="education container">
+      <div class="section-head">
+        <p class="eyebrow">// formation</p>
+        <h2>Parcours académique</h2>
+      </div>
+      <div class="education-list">
+        <div class="education-item">
+          <span class="edu-dot"></span>
+          <div>
+            <h3>Master 2 Génie Logiciel</h3>
+            <p>Institut Supérieur d'Informatique (ISI), Dakar</p>
+          </div>
+        </div>
+        <div class="education-item">
+          <span class="edu-dot"></span>
+          <div>
+            <h3>Licence Génie Logiciel</h3>
+            <p>Institut Supérieur d'Informatique (ISI), Dakar</p>
+          </div>
+        </div>
+        <div class="education-item">
+          <span class="edu-dot"></span>
+          <div>
+            <h3>Licence Informatique</h3>
+            <p>Université Gaston Berger de Saint-Louis</p>
+          </div>
+        </div>
+        <div class="education-item">
+          <span class="edu-dot"></span>
+          <div>
+            <h3>Baccalauréat, Série S2</h3>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact container">
+      <div class="section-head">
+        <p class="eyebrow">// contact</p>
+        <h2>Travaillons ensemble</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-lead">
+            Disponible pour des opportunités en développement Full Stack Java / Angular
+            ou des projets de solutions métiers et bancaires.
+          </p>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">Email</span>
+              <a href="mailto:diadhiouababacarpro@gmail.com">diadhiouababacarpro@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-label">Téléphone</span>
+              <a href="tel:+221781498476">+221 78 149 84 76</a>
+            </li>
+            <li>
+              <span class="contact-label">Localisation</span>
+              <span>Dakar, Sénégal</span>
+            </li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+
+          <button type="submit" class="btn btn-primary">Envoyer le message</button>
+          <p class="form-note" id="formNote" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Khalifa Ababacar Diadhiou. Tous droits réservés.</p>
+      <a href="#top" class="back-to-top">Retour en haut ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
